@@ -11,7 +11,7 @@ class ParrotWhenTestParrot {
 	/**
 	 * Test Parrot constructor and Animal toString method.  
 	 * The following values are expected:
-	 * kind = Parrot
+	 * kind = parrot
 	 * covering = hair
 	 */
 	@Test
@@ -23,7 +23,7 @@ class ParrotWhenTestParrot {
 	
 	/**
 	 * Test Parrot getSound method.  
-	 * The following values are expected:
+	 * The following value is expected:
 	 * Polly want a cracker
 	 */
 	@Test

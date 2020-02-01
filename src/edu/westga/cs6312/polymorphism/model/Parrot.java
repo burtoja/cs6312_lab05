@@ -14,7 +14,7 @@ public class Parrot extends Bird{
 	 *
 	 * Precondition:	none
 	 *
-	 * Postcondition:  Creates a Bird object which creates an Animal object with kind = bird and covering = feathers
+	 * Postcondition:  Creates a Bird object which creates an Animal object with kind = parrot and covering = feathers
 	 */
 	public Parrot() {
 		super("parrot");

@@ -24,7 +24,7 @@ class CatWhenTestCat {
 	/**
 	 * Test Cat getSound method.  
 	 * The following values are expected:
-	 * meow
+	 * Meow
 	 */
 	@Test
 	void testCatGetSoundExpectMeow() {

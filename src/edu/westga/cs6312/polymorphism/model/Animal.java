@@ -59,6 +59,7 @@ public abstract class Animal {
 	}
 	
 	/**
+	 * Factory method for producing Animal subclass objects
 	 * 
 	 * @param kind 	the kind of Animal to create
 	 * 
@@ -66,12 +67,39 @@ public abstract class Animal {
 	 *
 	 * Precondition:	kind must match an Animal subclass
 	 *
-	 * Postcondition:	Animal object matching kind
+	 * Postcondition:	Animal object matching kind or null if no kind matches
 	 */
 	public static Animal getNewAnimal(String kind) {
-		if (kind.equalsIgnoreCase("cow")) {
+		if (kind.equalsIgnoreCase("cat")) {
+			return new Cat();
+		} else {
 			return null;
 		}
-		return null;
+	}
+	
+	/**
+	 * Abstract method to retrieve Animal sound
+	 * 
+	 * @return
+	 *
+	 * Precondition:	none
+	 *
+	 * Postcondition:
+	 */
+	public abstract String getSound();
+	
+	/**
+	 * This method returns a string with a readable description of the Animal kind
+	 * and covering.
+	 * 
+	 * @return a string listing the Animal kind and covering
+	 * 
+	 * Precondition:	none
+	 *
+	 * Postcondition:
+	 */
+	@Override
+	public String toString() {
+		return "Kind: " + this.kind + " -- Covering: " + this.covering;
 	}
 }

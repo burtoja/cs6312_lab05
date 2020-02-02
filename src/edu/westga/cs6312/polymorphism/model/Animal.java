@@ -72,6 +72,12 @@ public abstract class Animal {
 	public static Animal getNewAnimal(String kind) {
 		if (kind.equalsIgnoreCase("cat")) {
 			return new Cat();
+		} else if (kind.equalsIgnoreCase("cheetah")) {
+			return new Cheetah();
+		} else if (kind.equalsIgnoreCase("parrot")) {
+			return new Parrot();
+		} else if (kind.equalsIgnoreCase("eagle")) {
+			return new Eagle();
 		} else {
 			return null;
 		}

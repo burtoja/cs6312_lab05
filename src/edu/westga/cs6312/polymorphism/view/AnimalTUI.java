@@ -43,12 +43,26 @@ public class AnimalTUI {
 		int userChoice;
 		do {
 			this.displayMenu();
-			System.out.println("Please choose an option from the above menu and type the number of your choice:");
-			userChoice = Integer.parseInt(this.userInput.nextLine());
+			userChoice = this.getUserChoice();
 			this.executeUserChoice(userChoice);
 		} while (userChoice != 3);
 		System.out.println("Thank you for using the Animal Application.");
 
+	}
+
+	/**
+	 * This method prompts the user to enter a number choice from the menu. The
+	 * choice entered by the user is returned by the method.
+	 * 
+	 * @return menu choice entered by the user
+	 *
+	 * Precondition: choice must be an integer
+	 *
+	 * Postcondition: integer returned
+	 */
+	private int getUserChoice() {
+		System.out.println("Please choose an option from the above menu and type the number of your choice:");
+		return Integer.parseInt(this.userInput.nextLine());
 	}
 
 	/**

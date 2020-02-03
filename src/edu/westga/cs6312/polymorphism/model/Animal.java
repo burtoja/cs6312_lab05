@@ -44,7 +44,7 @@ public abstract class Animal {
 	 *
 	 * Precondition:		isMovingFast is boolean
 	 *
-	 * Postcondition:
+	 * Postcondition:		object is not changed
 	 */
 	public String getMovement(boolean isMovingFast) {
 		String movementDescription;
@@ -67,7 +67,7 @@ public abstract class Animal {
 	 *
 	 * Precondition:	kind must match an Animal subclass
 	 *
-	 * Postcondition:	Animal object matching kind or null if no kind matches
+	 * Postcondition:	Animal subclass object created matching 'kind' or null if no 'kind' matches
 	 */
 	public static Animal getNewAnimal(String kind) {
 		if (kind.equalsIgnoreCase("cat")) {
@@ -90,7 +90,7 @@ public abstract class Animal {
 	 *
 	 * Precondition:	none
 	 *
-	 * Postcondition:
+	 * Postcondition:	object is not changed
 	 */
 	public abstract String getSound();
 	
@@ -102,7 +102,7 @@ public abstract class Animal {
 	 * 
 	 * Precondition:	none
 	 *
-	 * Postcondition:
+	 * Postcondition:	object is not changed
 	 */
 	@Override
 	public String toString() {

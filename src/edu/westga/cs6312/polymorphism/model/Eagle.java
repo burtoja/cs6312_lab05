@@ -15,8 +15,8 @@ public class Eagle extends Bird {
 	 *
 	 * Precondition: none
 	 *
-	 * Postcondition: Creates a Bird object which creates an Animal object with kind
-	 * = eagle and covering = feathers
+	 * Postcondition: Creates a Bird object which creates an Animal object with
+	 * 'kind' = eagle and covering = feathers
 	 */
 	public Eagle() {
 		super("eagle");
@@ -27,9 +27,10 @@ public class Eagle extends Bird {
 	 * 
 	 * @return "screech"
 	 *
-	 *         Precondition: none
+	 * Precondition: none
 	 *
-	 *         Postcondition:
+	 * Postcondition: After string representation of animal sound is
+	 * returned, no changes are made to the object
 	 */
 	@Override
 	public String getSound() {

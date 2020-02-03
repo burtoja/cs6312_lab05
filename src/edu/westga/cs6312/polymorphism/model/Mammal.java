@@ -7,17 +7,20 @@ package edu.westga.cs6312.polymorphism.model;
  * @version Jan 31, 2020
  *
  */
-public abstract class Mammal extends Animal{
-	
+public abstract class Mammal extends Animal {
+
 	/**
 	 * 
-	 * Constructor for Mammal class which then constructs an Animal object of this kind with covering of hair
+	 * Constructor for Mammal class which then constructs an Animal object of this
+	 * kind with covering of hair
 	 *
-	 * @param kind	type of Mammal
+	 * @param kind type of Mammal
 	 *
-	 * Precondition:
+	 * Precondition: 'kind' is delivered by the subclass and should
+	 * match its name
 	 *
-	 * Postcondition:	Animal object with type kind and covering of hair
+	 * Postcondition: Animal object with type kind and covering of hair
+	 * is created
 	 */
 	public Mammal(String kind) {
 		super(kind, "hair");

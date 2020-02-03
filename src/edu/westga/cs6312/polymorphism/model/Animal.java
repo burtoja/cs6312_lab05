@@ -10,19 +10,18 @@ package edu.westga.cs6312.polymorphism.model;
 public abstract class Animal {
 	private String kind;
 	private String covering;
-	
+
 	/**
 	 * 
 	 * 2-parameter constructor to create an Animal object
 	 *
-	 * @param kind		The kind of animal being created
-	 * @param covering	The animal's covering type
+	 * @param kind     The kind of animal being created
+	 * @param covering The animal's covering type
 	 *
-	 * Precondition:	kind != null
-	 * 					covering != null
+	 * Precondition: kind != null covering != null
 	 * 
-	 * Postcondition:	An animal of whose type is kind and is
-	 * 					covered with covering	
+	 * Postcondition: An animal of whose type is kind and is covered
+	 * with covering
 	 */
 	public Animal(String kind, String covering) {
 		if (kind == null) {
@@ -34,17 +33,17 @@ public abstract class Animal {
 		this.kind = kind;
 		this.covering = covering;
 	}
-	
+
 	/**
 	 * This method is used to get a statement describing how the animal is moving
 	 * 
-	 * @param isMovingFast	true if moving fast and false if moving slow
+	 * @param isMovingFast true if moving fast and false if moving slow
 	 * 
-	 * @return	statement describing how the Animal is moving
+	 * @return statement describing how the Animal is moving
 	 *
-	 * Precondition:		isMovingFast is boolean
+	 * Precondition: isMovingFast is boolean
 	 *
-	 * Postcondition:		object is not changed
+	 * Postcondition: object is not changed
 	 */
 	public String getMovement(boolean isMovingFast) {
 		String movementDescription;
@@ -57,17 +56,18 @@ public abstract class Animal {
 		}
 		return movementDescription;
 	}
-	
+
 	/**
 	 * Factory method for producing Animal subclass objects
 	 * 
-	 * @param kind 	the kind of Animal to create
+	 * @param kind the kind of Animal to create
 	 * 
-	 * @return	Animal object matching the kind delivered in the parameter
+	 * @return Animal object matching the kind delivered in the parameter
 	 *
-	 * Precondition:	kind must match an Animal subclass
+	 * Precondition: kind must match an Animal subclass
 	 *
-	 * Postcondition:	Animal subclass object created matching 'kind' or null if no 'kind' matches
+	 * Postcondition: Animal subclass object created matching 'kind' or null
+	 * if no 'kind' matches
 	 */
 	public static Animal getNewAnimal(String kind) {
 		if (kind.equalsIgnoreCase("cat")) {
@@ -82,27 +82,27 @@ public abstract class Animal {
 			return null;
 		}
 	}
-	
+
 	/**
 	 * Abstract method to retrieve Animal sound
 	 * 
 	 * @return
 	 *
-	 * Precondition:	none
+	 * Precondition: none
 	 *
-	 * Postcondition:	object is not changed
+	 * Postcondition: object is not changed
 	 */
 	public abstract String getSound();
-	
+
 	/**
 	 * This method returns a string with a readable description of the Animal kind
 	 * and covering.
 	 * 
 	 * @return a string listing the Animal kind and covering
 	 * 
-	 * Precondition:	none
+	 * Precondition: none
 	 *
-	 * Postcondition:	object is not changed
+	 * Postcondition: object is not changed
 	 */
 	@Override
 	public String toString() {

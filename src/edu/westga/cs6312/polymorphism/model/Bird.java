@@ -41,9 +41,9 @@ public abstract class Bird extends Animal {
 	@Override
 	public String getMovement(boolean isMovingFast) {
 		String movementDescription;
-		if (isMovingFast == true) {
+		if (isMovingFast) {
 			movementDescription = "I fly";
-		} else if (isMovingFast == false) {
+		} else if (!isMovingFast) {
 			movementDescription = "I walk on two legs";
 		} else {
 			throw new IllegalArgumentException("Invalid parameter provided for isMovingFast");

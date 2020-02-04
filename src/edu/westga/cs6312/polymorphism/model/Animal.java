@@ -47,9 +47,9 @@ public abstract class Animal {
 	 */
 	public String getMovement(boolean isMovingFast) {
 		String movementDescription;
-		if (isMovingFast == true) {
+		if (isMovingFast) {
 			movementDescription = "I run on four legs";
-		} else if (isMovingFast == false) {
+		} else if (!isMovingFast) {
 			movementDescription = "I walk on four legs";
 		} else {
 			throw new IllegalArgumentException("Invalid parameter provided for isMovingFast");

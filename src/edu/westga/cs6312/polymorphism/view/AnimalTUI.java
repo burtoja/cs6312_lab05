@@ -56,9 +56,9 @@ public class AnimalTUI {
 	 * 
 	 * @return menu choice entered by the user
 	 *
-	 * Precondition: choice must be an integer
+	 *         Precondition: choice must be an integer
 	 *
-	 * Postcondition: integer returned
+	 *         Postcondition: integer returned
 	 */
 	private int getUserChoice() {
 		System.out.println("Please choose an option from the above menu and type the number of your choice:");
@@ -75,16 +75,16 @@ public class AnimalTUI {
 	 */
 	private void executeUserChoice(int userChoice) {
 		switch (userChoice) {
-		case 1:
-			this.addAnimal();
-			break;
-		case 2:
-			this.viewAnimals();
-			break;
-		case 3:
-			break;
-		default:
-			System.out.println("Invalid choice. Please choose from the following options:");
+			case 1:
+				this.addAnimal();
+				break;
+			case 2:
+				this.viewAnimals();
+				break;
+			case 3:
+				break;
+			default:
+				System.out.println("Invalid choice. Please choose from the following options:");
 		}
 	}
 
